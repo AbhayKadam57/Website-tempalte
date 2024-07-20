@@ -147,7 +147,7 @@ function Navbar() {
             </ContactDivLeft>
             <ContactDivRight>
               <h4>Talk to Me</h4>
-              <p>+91 8369070266</p>
+              <p>+91 9619656755</p>
             </ContactDivRight>
           </ContactDiv>
         </Links>
@@ -195,7 +195,7 @@ function Navbar() {
               </ContactDivLeft>
               <ContactDivRight type={"mobile"}>
                 <h4>Talk to Me</h4>
-                <p>+91 8369070266</p>
+                <p>+91 9619656755</p>
               </ContactDivRight>
             </ContactDiv>
           </SideMenuLinks>

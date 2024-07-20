@@ -113,21 +113,32 @@ const AboutUs = () => {
               <h2>We Are Welcome</h2>
               <div>
                 <p>
-                  I am a BHMS doctor with 7 years of practice, having worked in
-                  various hospitals. In addition to my medical career, I am also
-                  a Numerologist, Motivational speaker, and Life coach.
+                  My name is <strong> dr. sheiiral Patharre</strong> . I am a
+                  <strong>
+                    {" "}
+                    doctor by profession with 7 years of clinical practice
+                  </strong>
+                  ,connected with corporate health organization as consultant
+                  along with that I am following my passion as a{" "}
+                  <strong>numerologist</strong> . In addition to my medical
+                  career, I am also a{" "}
+                  <strong>
+                    {" "}
+                    Numerologist, Motivational speaker, and Life coach
+                  </strong>{" "}
+                  .
                 </p>
                 <p>
-                  My zeal and passion for spiritualism have drawn me to the
-                  occult field, where my rational and holistic approach to
-                  occult science sets me apart. As a Numerologist, I strive to
-                  be a friend, philosopher, and guide to those seeking insight
-                  and understanding.
+                  My zeal and passion for <strong>spiritualism</strong> have
+                  drawn me to the occult field, where my rational and holistic
+                  approach to occult science sets me apart. As a Numerologist, I
+                  strive to be a <strong> friend, philosopher</strong>, and
+                  guide to those seeking insight and understanding.
                 </p>
               </div>
               <h3>
                 Contact Me:{" "}
-                <span style={{ fontWeight: "bold" }}> 8369070266</span>{" "}
+                <span style={{ fontWeight: "bold" }}> 9619656755</span>{" "}
               </h3>
             </div>
           </Slide>

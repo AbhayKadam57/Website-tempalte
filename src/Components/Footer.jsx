@@ -97,7 +97,7 @@ function Footer() {
               <FontAwesomeIcon icon={faYoutube} style={{ fontSize: "28px" }} />
             </a>
           </div>
-          <small>&#169; Copyright 2024 by Dr.Sheiital Patharre</small>
+          <small>&#169; Copyright 2024 by dr.sheiital Patharre</small>
         </Left>
         <Right>
           <h3>Contact Info</h3>
@@ -115,7 +115,7 @@ function Footer() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <FontAwesomeIcon icon={faPhone} />
-              <p>+91 8369070266</p>
+              <p>+91 9619656755</p>
             </div>
           </div>
         </Right>

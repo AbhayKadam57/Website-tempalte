@@ -52,7 +52,7 @@ function HeroBanner() {
             THE BEST
             <span style={{ color: "#fb6f92", fontStyle: "italic" }}>
               {" "}
-              NUMEROlLOGY & VASTUSHASTRA
+              NUMEROLOGY & VASTU CONSULTANT
             </span>
           </h1>
         </Fade>
