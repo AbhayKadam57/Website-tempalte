@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { laptop, tablet } from "../utils/Responsive";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { width } from "@fortawesome/free-solid-svg-icons/faQuoteLeft";
 
 const Container = styled.div`
   display: flex;
@@ -19,6 +20,7 @@ const Content = styled.div`
   justify-content: center;
   ${tablet({ flexDirection: "column", gap: "20px" })}
   height:100%;
+  gap: 30px;
 `;
 
 const Left = styled.div`
@@ -26,10 +28,17 @@ const Left = styled.div`
   div {
     width: 100%;
     height: 400px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
-      width: 100%;
+      width: 80%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
+      border-radius: 24px;
+      /* object-position: 15% 30%; */
+      ${tablet({ width: "100%" })}
     }
   }
 `;
@@ -84,7 +93,10 @@ const AboutUs = () => {
         <Left>
           <Fade damping={0.1} triggerOnce={false}>
             <div>
-              <img src="/images/my_image.png" />
+              <img
+                src="/images/Option_1.webp"
+                // style={{ transform: "scaleX(-1)" }}
+              />
             </div>
           </Fade>
         </Left>
@@ -101,21 +113,21 @@ const AboutUs = () => {
               <h2>We Are Welcome</h2>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas ultrices ut enim eu efficitur. Proin eget convallis
-                  nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar
-                  vitae.{" "}
+                  I am a BHMS doctor with 7 years of practice, having worked in
+                  various hospitals. In addition to my medical career, I am also
+                  a Numerologist, Motivational speaker, and Life coach.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas ultrices ut enim eu efficitur. Proin eget convallis
-                  nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar
-                  vitae.{" "}
+                  My zeal and passion for spiritualism have drawn me to the
+                  occult field, where my rational and holistic approach to
+                  occult science sets me apart. As a Numerologist, I strive to
+                  be a friend, philosopher, and guide to those seeking insight
+                  and understanding.
                 </p>
               </div>
               <h3>
                 Contact Me:
-                <span style={{ fontWeight: "bold" }}>7738259547</span>{" "}
+                <span style={{ fontWeight: "bold" }}>8269070266</span>{" "}
               </h3>
             </div>
           </Slide>

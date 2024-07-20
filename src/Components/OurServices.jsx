@@ -47,7 +47,7 @@ const Grid = styled.div`
 
 const GridBox = styled.div`
   /* border: 1px solid red; */
-  min-height: 200px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -68,60 +68,117 @@ const GridBox = styled.div`
   }
 `;
 
+// const ServiceList = [
+//   {
+//     id: 1,
+//     icon: faSun,
+//     title: "Name Fixing",
+//     desc: "Name fixing is a specialized service that involves analyzing and adjusting the spelling or composition of names to enhance their vibrational energy and alignment with an individual's personal and professional aspirations. By leveraging principles of numerology and other esoteric sciences, name fixing aims to improve fortune, success, and overall well-being.",
+//   },
+//   {
+//     id: 2,
+//     icon: faMobile,
+//     title: "Mobile Number Consultation",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+//   {
+//     id: 3,
+//     icon: faComment,
+//     title: "Personal Consultation",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+//   {
+//     id: 4,
+//     icon: faBriefcase,
+//     title: "Business Consultation",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+//   {
+//     id: 5,
+//     icon: faBuilding,
+//     title: "Company Name Fixing",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+//   {
+//     id: 6,
+//     icon: faSchool,
+//     title: "Career Consultation",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+//   {
+//     id: 7,
+//     icon: faRing,
+//     title: "Marriage Consultation",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+//   {
+//     id: 7,
+//     icon: faPersonBreastfeeding,
+//     title: "Pregnancy Consultation",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+//   {
+//     id: 7,
+//     icon: faBorderNone,
+//     title: "Loshu Grid Mastery",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+//   },
+// ];
+
 const ServiceList = [
   {
     id: 1,
     icon: faSun,
     title: "Name Fixing",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Name fixing utilizes numerology to analyze and adjust your name, enhancing its vibrational energy to align with your personal and professional goals. This service aims to attract success, prosperity, and overall well-being.",
   },
   {
     id: 2,
     icon: faMobile,
     title: "Mobile Number Consultation",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Mobile number consultation uses numerology to determine the most favorable mobile number for you. This service helps enhance your personal and professional communication, attracting positive interactions and opportunities.",
   },
   {
     id: 3,
     icon: faComment,
     title: "Personal Consultation",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Personal consultation leverages numerology to provide tailored advice on various life aspects. This service helps you understand your strengths, overcome challenges, and make informed decisions to achieve your goals.",
   },
   {
     id: 4,
     icon: faBriefcase,
     title: "Business Consultation",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Business consultation applies numerological principles to your business strategy. This service aims to improve business performance, attract prosperity, and ensure long-term success by aligning business activities with favorable numbers.",
   },
   {
     id: 5,
     icon: faBuilding,
     title: "Company Name Fixing",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Company name fixing uses numerology to optimize your business name. This service helps enhance your brand's vibrational energy, attracting clients, boosting reputation, and fostering business growth.",
   },
   {
     id: 6,
     icon: faSchool,
     title: "Career Consultation",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Career consultation employs numerology to guide your professional journey. This service helps identify the best career paths, advancement opportunities, and strategies for overcoming professional challenges.",
   },
   {
     id: 7,
     icon: faRing,
     title: "Marriage Consultation",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Marriage consultation uses numerology to analyze relationship compatibility and harmony. This service provides insights to strengthen your marital bond, fostering a fulfilling and balanced partnership.",
   },
   {
-    id: 7,
+    id: 8,
     icon: faPersonBreastfeeding,
     title: "Pregnancy Consultation",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Pregnancy consultation applies numerological insights to support expectant mothers. This service aims to ensure a positive and harmonious pregnancy experience, promoting well-being for both mother and child.",
   },
   {
-    id: 7,
+    id: 9,
     icon: faBorderNone,
     title: "Loshu Grid Mastery",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices ut enim eu efficitur. Proin eget convallis nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar vitae",
+    desc: "Loshu Grid Mastery delves into the ancient numerological system of the Loshu Grid. This service helps you understand your personality and life path, achieving balance and personal growth through numerological insights.",
   },
 ];
 

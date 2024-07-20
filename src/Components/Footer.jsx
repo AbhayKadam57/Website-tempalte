@@ -39,10 +39,15 @@ const Left = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `;
 const Logo = styled.div`
-  width: 80px;
-  height: 60px;
+  width: 150px;
+  height: 150px;
   flex: 1;
 
   img {
@@ -68,13 +73,29 @@ function Footer() {
       <Content>
         <Left>
           <Logo>
-            <img src="/images/logo.webp" />
+            <img src="/images/logo_v2.png" />
           </Logo>
           <h3>Follow us on</h3>
           <div style={{ display: "flex", alignItems: "cente", gap: "20px" }}>
-            <FontAwesomeIcon icon={faFacebook} style={{ fontSize: "28px" }} />
-            <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "28px" }} />
-            <FontAwesomeIcon icon={faYoutube} style={{ fontSize: "28px" }} />
+            <a
+              href="https://www.facebook.com/shital.kadam.7161"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faFacebook} style={{ fontSize: "28px" }} />
+            </a>
+            <a
+              href="https://www.instagram.com/dr.sheiitalpatharre?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                style={{ fontSize: "28px" }}
+              />
+            </a>
+
+            <a href="https://www.youtube.com/@Sheiitalbkadamm" target="_blank">
+              <FontAwesomeIcon icon={faYoutube} style={{ fontSize: "28px" }} />
+            </a>
           </div>
           <small>&#169; Copyright 2024 by shital kadam</small>
         </Left>
@@ -90,11 +111,11 @@ function Footer() {
           >
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <FontAwesomeIcon icon={faEnvelope} />
-              <p>kadamabhay40@gmail.com</p>
+              <p>drskadam24@gmail.com</p>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <FontAwesomeIcon icon={faPhone} />
-              <p>+91 7738259547</p>
+              <p>+91 8269070266</p>
             </div>
           </div>
         </Right>

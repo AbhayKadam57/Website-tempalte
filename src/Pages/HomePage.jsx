@@ -13,6 +13,7 @@ const Container = styled.div`
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  background-color: #f0e6ef;
 `;
 
 const HomePage = () => {

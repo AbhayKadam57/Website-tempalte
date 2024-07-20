@@ -41,8 +41,9 @@ const Links = styled.div`
 
 const Logo = styled.div`
   width: 100%;
-  height: 60px;
+  height: 100px;
   flex: 1;
+  padding: 10px;
 
   img {
     width: 100%;
@@ -120,19 +121,19 @@ function Navbar() {
     <Container>
       <NavContainer>
         <Logo>
-          <img src="/images/logo.webp" />
+          <img src="/images/logo_v2.png" />
         </Logo>
         <Links>
           <ContactDiv>
             <ContactDivLeft>
               <FontAwesomeIcon
                 icon={faMapLocation}
-                style={{ color: Colors.GRAY, fontSize: "2rem" }}
+                style={{ color: Colors.PRIMARY, fontSize: "2rem" }}
               />
             </ContactDivLeft>
             <ContactDivRight>
               <h4>Reach Us</h4>
-              <p>601,Ram Nagar Niwas</p>
+              <p>Mira Bhayander, Thane</p>
             </ContactDivRight>
           </ContactDiv>
         </Links>
@@ -141,12 +142,12 @@ function Navbar() {
             <ContactDivLeft>
               <FontAwesomeIcon
                 icon={faPhone}
-                style={{ color: Colors.GRAY, fontSize: "2rem" }}
+                style={{ color: Colors.PRIMARY, fontSize: "2rem" }}
               />
             </ContactDivLeft>
             <ContactDivRight>
               <h4>Talk to Me</h4>
-              <p>+91 123234567</p>
+              <p>+91 8369070266</p>
             </ContactDivRight>
           </ContactDiv>
         </Links>
@@ -156,7 +157,7 @@ function Navbar() {
         <HamBurger>
           <FontAwesomeIcon
             icon={faBars}
-            style={{ color: Colors.GRAY, fontSize: "2rem" }}
+            style={{ color: Colors.PRIMARY, fontSize: "2rem" }}
             onClick={handleOpenSideMenu}
           />
         </HamBurger>
@@ -165,7 +166,7 @@ function Navbar() {
         <SideMenuTop>
           <FontAwesomeIcon
             icon={faClose}
-            style={{ color: Colors.GRAY, fontSize: "2rem" }}
+            style={{ color: Colors.PRIMARY, fontSize: "2rem" }}
             onClick={handleOpenSideMenu}
           />
         </SideMenuTop>

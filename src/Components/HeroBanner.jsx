@@ -13,7 +13,7 @@ const Container = styled.div`
       rgba(39, 13, 52, 0.575) 0%,
       rgba(45, 72, 134, 0.447) 100%
     ),
-    url("/images/hero_ng.jpg");
+    url("/images/hero_ng.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,9 +50,9 @@ function HeroBanner() {
           <h1>Welcome to</h1>
           <h1>
             THE BEST
-            <span style={{ color: "#D07918", fontStyle: "italic" }}>
+            <span style={{ color: "#fb6f92", fontStyle: "italic" }}>
               {" "}
-              NUMEROlLOGY
+              NUMEROlLOGY & VASTUSHASTRA
             </span>
           </h1>
         </Fade>

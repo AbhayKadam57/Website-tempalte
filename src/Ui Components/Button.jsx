@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ButtonDiv = styled.button`
-  background-color: #d07918;
+  background-color: #fb6f92;
   padding: 10px;
   border: none;
   border-radius: 10px;
@@ -19,7 +19,7 @@ const ButtonDiv = styled.button`
 function Button({ text, type }) {
   return (
     <ButtonDiv type={type}>
-      <a href="https://wa.me/7738259547" target="_blank">
+      <a href="https://wa.me/8269070266" target="_blank">
         {text}
       </a>
     </ButtonDiv>
