@@ -8,7 +8,6 @@ import HomePage from "./Pages/HomePage";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 `;
 
 function App() {

@@ -20,6 +20,7 @@ const Container = styled.div`
   min-height: 60px;
   box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
   position: sticky;
+  z-index: 100;
 `;
 
 const NavContainer = styled.div`
@@ -81,9 +82,8 @@ const SideMenu = styled.div`
   position: absolute;
   top: 0;
   right: ${(props) => (props.status === true ? "0" : "-100%")};
-  z-index: 999;
+  z-index: 2;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
-  /* display: ${(props) => (props.status === true ? "flex" : "none")}; */
   flex-direction: column;
   padding: 20px;
   background-color: white;
