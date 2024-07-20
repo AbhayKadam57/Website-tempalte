@@ -181,7 +181,7 @@ function Navbar() {
               </ContactDivLeft>
               <ContactDivRight type={"mobile"}>
                 <h4>Reach Us</h4>
-                <p>601,Ram Nagar Niwas</p>
+                <p>Mira Bhayander, Thane</p>
               </ContactDivRight>
             </ContactDiv>
           </SideMenuLinks>
@@ -195,7 +195,7 @@ function Navbar() {
               </ContactDivLeft>
               <ContactDivRight type={"mobile"}>
                 <h4>Talk to Me</h4>
-                <p>+91 123234567</p>
+                <p>+91 8369070266</p>
               </ContactDivRight>
             </ContactDiv>
           </SideMenuLinks>
