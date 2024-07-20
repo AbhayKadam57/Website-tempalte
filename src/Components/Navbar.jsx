@@ -152,7 +152,7 @@ function Navbar() {
           </ContactDiv>
         </Links>
         <Links>
-          <Button text="Book Appointment" type="mobile" />
+          <Button text="Book an appointment" type="mobile" />
         </Links>
         <HamBurger>
           <FontAwesomeIcon
@@ -200,7 +200,7 @@ function Navbar() {
             </ContactDiv>
           </SideMenuLinks>
           <SideMenuLinks>
-            <Button text="Book Appointment" type="mobile" />
+            <Button text="Book an Appointment" type="mobile" />
           </SideMenuLinks>
         </SideMenuBottom>
       </SideMenu>

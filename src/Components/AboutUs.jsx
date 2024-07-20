@@ -126,8 +126,8 @@ const AboutUs = () => {
                 </p>
               </div>
               <h3>
-                Contact Me:
-                <span style={{ fontWeight: "bold" }}>8269070266</span>{" "}
+                Contact Me:{" "}
+                <span style={{ fontWeight: "bold" }}> 8269070266</span>{" "}
               </h3>
             </div>
           </Slide>

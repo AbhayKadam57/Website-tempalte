@@ -66,7 +66,7 @@ function HeroBanner() {
         </Fade>
 
         <Zoom damping={0.1} triggerOnce={false}>
-          <Button text="Book Appointment" type="mobile" />
+          <Button text="Book an appointment" type="mobile" />
         </Zoom>
       </CenterDiv>
     </Container>

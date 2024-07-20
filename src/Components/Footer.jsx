@@ -97,7 +97,7 @@ function Footer() {
               <FontAwesomeIcon icon={faYoutube} style={{ fontSize: "28px" }} />
             </a>
           </div>
-          <small>&#169; Copyright 2024 by shital kadam</small>
+          <small>&#169; Copyright 2024 by Dr.Sheiital Patharre</small>
         </Left>
         <Right>
           <h3>Contact Info</h3>
