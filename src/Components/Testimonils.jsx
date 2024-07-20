@@ -117,7 +117,7 @@ const settings = {
 function Testimonials() {
   return (
     <Container>
-      <Fade>
+      <Fade style={{ padding: "20px", textAlign: "center" }}>
         <h1 style={{ marginBottom: "15px" }}>
           What Clients <span style={{ color: Colors.PRIMARY }}>Are Saying</span>
         </h1>

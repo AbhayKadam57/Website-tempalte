@@ -115,7 +115,7 @@ function Footer() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <FontAwesomeIcon icon={faPhone} />
-              <p>+91 8269070266</p>
+              <p>+91 8369070266</p>
             </div>
           </div>
         </Right>

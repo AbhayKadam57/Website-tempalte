@@ -19,7 +19,7 @@ const ButtonDiv = styled.button`
 function Button({ text, type }) {
   return (
     <ButtonDiv type={type}>
-      <a href="https://wa.me/8269070266" target="_blank">
+      <a href="https://wa.me/8369070266" target="_blank">
         {text}
       </a>
     </ButtonDiv>
