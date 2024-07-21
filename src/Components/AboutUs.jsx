@@ -113,7 +113,7 @@ const AboutUs = () => {
               <h2>We Are Welcome</h2>
               <div>
                 <p>
-                  My name is <strong> dr. sheiiral Patharre</strong> . I am a
+                  My name is <strong> dr. sheiital Patharre</strong> . I am a
                   <strong>
                     {" "}
                     doctor by profession with 7 years of clinical practice
