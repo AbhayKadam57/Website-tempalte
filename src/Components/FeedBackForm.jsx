@@ -168,6 +168,7 @@ const FeedBackForm = () => {
                 placeholder="Your Review"
                 onChange={(e) => setFeedback(e.target.value)}
               />
+              <small>*Please add min 50 and max 360 characters </small>
             </InputDiv>
             <InputDiv>
               <Label>Rating:</Label>
