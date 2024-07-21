@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { tablet } from "../utils/Responsive";
 import Slider from "react-slick";
@@ -6,10 +6,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import Colors from "../utils/Colors";
-import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons/faQuoteLeft";
+import {
+  faQuoteLeft,
+  height,
+} from "@fortawesome/free-solid-svg-icons/faQuoteLeft";
 import { Fade, Zoom } from "react-awesome-reveal";
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
+import { getFirestore } from "firebase/firestore";
+import { app } from "../utils/firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
+import { ReviewContext } from "../Context/ReviewContext";
 
 const Container = styled.div`
   display: flex;
@@ -115,6 +125,27 @@ const settings = {
 };
 
 function Testimonials() {
+  const [rating, setRating] = useState(3);
+  const db = getFirestore(app);
+
+  // const [testiMonials, setTestiMonils] = useState([]);
+
+  const { testiMonials, setTestiMonils } = useContext(ReviewContext);
+
+  const getAllTestiMonials = async () => {
+    const querySnapshot = await getDocs(collection(db, "customer-reviews"));
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      // console.log(doc.id, " => ", doc.data());
+
+      setTestiMonils((prev) => [...prev, doc.data()]);
+    });
+  };
+
+  useState(() => {
+    getAllTestiMonials();
+  }, [testiMonials]);
+
   return (
     <Container>
       <Fade style={{ padding: "20px", textAlign: "center" }}>
@@ -125,60 +156,32 @@ function Testimonials() {
 
       <ContentSlider>
         <Slider {...settings}>
-          <Zoom>
-            <TestimonialCard>
-              <div>
-                <img src="/images/my_image.jpg" alt="" />
-              </div>
-              <h2>Abhay Kadam</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas ultrices ut enim eu efficitur. Proin eget convallis
-                nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar
-                vitae
-              </p>
-              <FontAwesomeIcon
-                icon={faQuoteLeft}
-                style={{ color: Colors.GRAY, fontSize: "3rem" }}
-              />
-            </TestimonialCard>
-          </Zoom>
-          <Zoom>
-            <TestimonialCard>
-              <div>
-                <img src="/images/my_image.jpg" alt="" />
-              </div>
-              <h2>Abhay Kadam</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas ultrices ut enim eu efficitur. Proin eget convallis
-                nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar
-                vitae
-              </p>
-              <FontAwesomeIcon
-                icon={faQuoteLeft}
-                style={{ color: Colors.GRAY, fontSize: "3rem" }}
-              />
-            </TestimonialCard>
-          </Zoom>
-          <Zoom>
-            <TestimonialCard>
-              <div>
-                <img src="/images/my_image.jpg" alt="" />
-              </div>
-              <h2>Abhay Kadam</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas ultrices ut enim eu efficitur. Proin eget convallis
-                nibh. In sodales imperdiet est, ac vestibulum nisl pulvinar
-                vitae
-              </p>
-              <FontAwesomeIcon
-                icon={faQuoteLeft}
-                style={{ color: Colors.GRAY, fontSize: "3rem" }}
-              />
-            </TestimonialCard>
-          </Zoom>
+          {testiMonials &&
+            testiMonials?.map((item, id) => (
+              <Zoom>
+                <TestimonialCard>
+                  <div>
+                    {/* <img src="/images/my_image.jpg" alt="" /> */}
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      style={{ fontSize: "4rem", color: Colors.PRIMARY }}
+                    />
+                  </div>
+                  <h2>{item.fullname}</h2>
+                  <Rating
+                    style={{ maxWidth: 180 }}
+                    value={item.rating}
+                    // onChange={setRating}
+                    readOnly
+                  />
+                  <p>{item.feedback}</p>
+                  <FontAwesomeIcon
+                    icon={faQuoteLeft}
+                    style={{ color: Colors.GRAY, fontSize: "3rem" }}
+                  />
+                </TestimonialCard>
+              </Zoom>
+            ))}
         </Slider>
       </ContentSlider>
     </Container>

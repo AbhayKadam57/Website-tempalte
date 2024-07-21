@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
+import { ReviewContext } from "./Context/ReviewContext";
 
 const Container = styled.div`
   display: flex;
@@ -11,12 +12,14 @@ const Container = styled.div`
 `;
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [testiMonials, setTestiMonils] = useState([]);
 
   return (
-    <Container>
-      <HomePage />
-    </Container>
+    <ReviewContext.Provider value={{ testiMonials, setTestiMonils }}>
+      <Container>
+        <HomePage />
+      </Container>
+    </ReviewContext.Provider>
   );
 }
 

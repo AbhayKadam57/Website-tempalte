@@ -6,6 +6,7 @@ import AboutUs from "../Components/AboutUs";
 import OurServices from "../Components/OurServices";
 import Testimonils from "../Components/Testimonils";
 import Footer from "../Components/Footer";
+import FeedBackForm from "../Components/FeedBackForm";
 
 const Container = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ const HomePage = () => {
       <AboutUs />
       <OurServices />
       <Testimonils />
+      <FeedBackForm />
       <Footer />
     </Container>
   );

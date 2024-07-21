@@ -4,3 +4,15 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
+
+.rr--group.rr--dir-x.rr--has-stroke.rr--space-sm {
+  height: 30px !important;
+  display: flex !important;
+  align-items: start !important;
+  /* background-color: red; */
+  border-radius: 0 !important;
+}
+
+.rr--box {
+  height: 30px !important;
+}
