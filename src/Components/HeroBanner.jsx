@@ -18,6 +18,7 @@ const Container = styled.div`
   background-position: center;
   background-size: cover;
   height: 80vh;
+  ${mobile({ height: "80vh" })}
 `;
 
 const CenterDiv = styled.div`

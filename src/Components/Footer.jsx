@@ -51,7 +51,7 @@ const Logo = styled.div`
   flex: 1;
 
   img {
-    width: 100%;
+    width: 100px;
     height: 100%;
     object-fit: contain;
   }
@@ -73,7 +73,7 @@ function Footer() {
       <Content>
         <Left>
           <Logo>
-            <img src="/images/logo_v2.png" />
+            <img src="/images/logo_v2.png" width="472" height="267" />
           </Logo>
           <h3>Follow us on</h3>
           <div style={{ display: "flex", alignItems: "cente", gap: "20px" }}>

@@ -46,7 +46,7 @@ const Logo = styled.div`
   padding: 10px;
 
   img {
-    width: 100%;
+    width: 100px;
     height: 100%;
     object-fit: contain;
   }
@@ -121,7 +121,7 @@ function Navbar() {
     <Container>
       <NavContainer>
         <Logo>
-          <img src="/images/logo_v2.png" />
+          <img src="/images/logo_v2.png" width="427" height="272" />
         </Logo>
         <Links>
           <ContactDiv>

@@ -7,6 +7,7 @@ import OurServices from "../Components/OurServices";
 import Testimonils from "../Components/Testimonils";
 import Footer from "../Components/Footer";
 import FeedBackForm from "../Components/FeedBackForm";
+import ThankSection from "../Components/ThankSection";
 
 const Container = styled.div`
   display: flex;
@@ -24,8 +25,9 @@ const HomePage = () => {
       <HeroBanner />
       <AboutUs />
       <OurServices />
-      <Testimonils />
-      <FeedBackForm />
+      {/* <Testimonils />
+      <FeedBackForm /> */}
+      <ThankSection />
       <Footer />
     </Container>
   );
